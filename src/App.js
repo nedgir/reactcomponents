@@ -1,12 +1,14 @@
-import logo from './logo.svg';
+import Card from './UI/Card';
 import './App.css';
 import Header from './components/Header';
 
 function App() {
+  var title = "react";
   return (
     <div className="App">
+      <Card>
       <Header></Header>
-  Welcome to react js
+      </Card>
     </div>
   );
 }

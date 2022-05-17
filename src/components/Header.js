@@ -13,6 +13,7 @@ function Header() {
     setDt(event.target.value);
   }
   function hobbyimg (event){
+    console.log(event.target.value);
 setImg(event.target.value);
   }
   function hobbyhandler(event){
@@ -117,7 +118,7 @@ setImg('');
           tabindex="0"
         >
           {hobby.map((item) => (
-            <Hobbies hobby={item.name} dt={item.dt} img = {img} />
+            <Hobbies hobby={item.name} dt={item.dt} img = {item.img} />
           ))}
         </div>
       </div>

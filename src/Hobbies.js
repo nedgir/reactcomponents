@@ -5,6 +5,7 @@ import Dtformat from './utility/Dtformat'
 const Hobbies = (props) => {
   return (
       <Card>
+        <div><img src={props.img}/></div>
     <div>{props.hobby}</div>
     <div><Dtformat dt={props.dt}/></div>
     </Card>
